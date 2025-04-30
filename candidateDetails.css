@@ -127,7 +127,7 @@
 .detail-item {
     display: flex;
     margin-bottom: 8px;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 .label {
@@ -146,6 +146,7 @@
     width: 58%;
     color: #333;
     font-weight: 500;
+    text-align: right;
 }
 
 .candidate-contact {
@@ -199,39 +200,7 @@
 }
 
 /* Constituency Details Section */
-.constituency-details-section {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
 
-.constituency-details-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.constituency-map {
-    flex: 1;
-    min-width: 300px;
-}
-
-.constituency-map h3 {
-    color: #2e4b8f;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.map-placeholder {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-}
-
-.map-placeholder img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .constituency-info {
     flex: 1;
@@ -268,7 +237,7 @@
     width: 40%;
     color: #666;
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .info-label i {
@@ -282,78 +251,16 @@
     font-weight: 500;
 }
 
-/* Previous Election Section */
-.previous-election-section {
-    padding: 50px 0;
+.party-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 10;
+    border: 2px solid #fff;
 }
-
-.previous-election-section h2 {
-    color: #2e4b8f;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.previous-election-results {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.previous-election-chart {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-}
-
-.previous-election-chart img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-}
-
-.previous-results-table {
-    flex: 1;
-    min-width: 300px;
-}
-
-.previous-results-table table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.previous-results-table th {
-    background-color: #2e4b8f;
-    color: #fff;
-    padding: 15px;
-    text-align: left;
-}
-
-.previous-results-table td {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
-    color: #333;
-}
-
-.previous-results-table tr:last-child td {
-    border-bottom: none;
-}
-
-.previous-results-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-.previous-results-table tr:hover {
-    background-color: #f1f1f1;
-}
-.pros-cons{
-    display: inline-block;
-}
-
 /* Responsive Styles */
 @media (max-width: 992px) {
     .stat-item {
