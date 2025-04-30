@@ -88,8 +88,9 @@ header {
     font-weight: bold; /* Make the text bold */
     padding: 10px 20px; /* Add some padding around the text */
     display: inline-block; /* To contain the background to the text width */
-    -webkit-text-stroke: 2px rgb(255, 255, 255); /* For Safari and Chrome */
+    -webkit-text-stroke: 2px rgb(255, 167, 167); /* For Safari and Chrome */
     border-radius: 5px; /* Optional: Add slight rounding to the background */
+
 }
 
 .hero p {
@@ -611,7 +612,9 @@ display: ruby;
     .hero h1 {
         font-size: 1.5rem;
     }
-
+.fatafati{
+    min-width: auto;
+}
     .hero p {
         font-size: 0.9rem;
     }
