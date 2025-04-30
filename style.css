@@ -83,16 +83,23 @@ header {
 
 .hero h1 {
 
-    color: rgb(255, 0, 0); /* White text color */
+    color: rgb(235, 0, 0); /* White text color */
     font-size: 2em; /* Adjust as needed */
     font-weight: bold; /* Make the text bold */
     padding: 10px 20px; /* Add some padding around the text */
     display: inline-block; /* To contain the background to the text width */
-    -webkit-text-stroke: 2px rgb(255, 167, 167); /* For Safari and Chrome */
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* For Safari and Chrome */
     border-radius: 5px; /* Optional: Add slight rounding to the background */
 
 }
-
+.main-heading img {
+    display: inline-block; /* Prevents extra space below the image */
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto;    /* Maintains the image's aspect ratio */
+  }
+  .main-heading{
+    justify-content: center;
+  }
 .hero p {
     margin-bottom: 1.5rem;
 }
@@ -182,7 +189,7 @@ header {
 
 .info-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
@@ -560,7 +567,7 @@ footer {
     font-size: 0.9rem;
 }
 .everything{
-display: ruby;
+display: inline-block;
 }
 
 /* Enhanced Responsive Styling */
