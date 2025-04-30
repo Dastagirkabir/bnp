@@ -229,7 +229,9 @@ header {
 .green-header {
     background-color: #0c6b47;
 }
-
+.lightgreen-header{
+    background-color: rgb(3, 184, 57);
+}
 .purple-header {
     background-color: #9b59b6;
 }
