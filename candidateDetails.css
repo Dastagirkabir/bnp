@@ -350,6 +350,9 @@
 .previous-results-table tr:hover {
     background-color: #f1f1f1;
 }
+.pros-cons{
+    display: inline-block;
+}
 
 /* Responsive Styles */
 @media (max-width: 992px) {
