@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container header-content">
             <div class="logo">
@@ -26,14 +25,12 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="main-heading">
                 <img src="image.png" alt="Your Website Logo">
             </div>
-         <!-- <h1>জাতীয়তাবাদী দল (বিএনপি) এর নির্বাচনী তথ্য ব্যবস্থাপনা</h1> -->
-            <p>বিভাগ, জেলা ও নির্বাচনী আসন অনুযায়ী প্রার্থীদের সম্পূর্ণ তথ্য সংগ্রহশালা</p>
+         <p>বিভাগ, জেলা ও নির্বাচনী আসন অনুযায়ী প্রার্থীদের সম্পূর্ণ তথ্য সংগ্রহশালা</p>
             <div class="search-bar">
                 <input type="text" placeholder="অনুসন্ধান করুন">
                 <button><i class="fas fa-search"></i></button>
@@ -41,398 +38,34 @@
         </div>
     </section>
 <section class="everything">
-    <!-- Search Section -->
     <section class="container search-section">
         <h2>নির্বাচনী এলাকা অনুযায়ী প্রার্থী অনুসন্ধান করুন</h2>
-        <div class="search-filters">
-            <select id="divisionSelect">
-                <option>বিভাগ নির্বাচন করুন</option>
-                <option>ঢাকা</option>
-                <option>চট্টগ্রাম</option>
-                <option>রাজশাহী</option>
-                <option>খুলনা</option>
-                <option>বরিশাল</option>
-                <option>সিলেট</option>
-                <option>রংপুর</option>
-                <option>ময়মনসিংহ</option>
-            </select>
-            <select id="districtSelect">
-                <option>জেলা নির্বাচন করুন</option>
-                <option> ঢাকা </option>
-                <option> ফরিদপুর </option>
-                <option> গাজীপুর </option>
-                <option> গোপালগঞ্জ </option>
-                <option> কিশোরগঞ্জ </option>
-                <option> মাদারীপুর </option>
-                <option> মানিকগঞ্জ </option>
-                <option> মুন্সিগঞ্জ </option>
-                <option> নারায়ণগঞ্জ </option>
-                <option> নরসিংদী </option>
-                <option> রাজবাড়ী </option>
-                <option> শরীয়তপুর </option>
-                <option> টাঙ্গাইল </option>
-                <option> ময়মনসিংহ </option>
-                <option> জামালপুর </option>
-                <option> নেত্রকোণা </option>
-                <option> শেরপুর </option>
-                <option> চট্টগ্রাম </option>
-                <option> বান্দরবান </option>
-                <option> ব্রাহ্মণবাড়িয়া </option>
-                <option> চাঁদপুর </option>
-                <option> কুমিল্লা </option>
-                <option> কক্সবাজার </option>
-                <option> ফেনী </option>
-                <option> খাগড়াছড়ি </option>
-                <option> লক্ষ্মীপুর </option>
-                <option> নোয়াখালী </option>
-                <option> রাঙ্গামাটি </option>
-                <option> সিলেট </option>
-                <option> হবিগঞ্জ </option>
-                <option> মৌলভীবাজার </option>
-                <option> সুনামগঞ্জ </option>
-                <option> রাজশাহী </option>
-                <option> জয়পুরহাট </option>
-                <option> নওগাঁ </option>
-                <option> নাটোর </option>
-                <option> পাবনা </option>
-                <option> বগুড়া </option>
-                <option> চাঁপাইনবাবগঞ্জ </option>
-                <option> সিরাজগঞ্জ </option>
-                <option> খুলনা </option>
-                <option> বাগেরহাট </option>
-                <option> চুয়াডাঙ্গা </option>
-                <option> যশোর </option>
-                <option> ঝিনাইদহ </option>
-                <option> কুষ্টিয়া </option>
-                <option> মাগুরা </option>
-                <option> মেহেরপুর </option>
-                <option> নড়াইল </option>
-                <option> সাতক্ষীরা </option>
-                <option> বরিশাল </option>
-                <option> বরগুনা </option>
-                <option> ভোলা </option>
-                <option> ঝালকাঠী </option>
-                <option> পটুয়াখালী </option>
-                <option> পিরোজপুর </option>
-                <option> রংপুর </option>
-                <option> গাইবান্ধা </option>
-                <option> কুড়িগ্রাম </option>
-                <option> লালমনিরহাট </option>
-                <option> নীলফামারী </option>
-                <option> পঞ্চগড় </option>
-                <option> ঠাকুরগাঁও </option>
-            </select>
-            <select id="constituencySelect">
-                <option>আসন নির্বাচন করুন</option>
-                <option> পঞ্চগড়-১ </option>
-                <option> পঞ্চগড়-২ </option>
-                <option> ঠাকুরগাঁও-১ </option>
-                <option> ঠাকুরগাঁও-২ </option>
-                <option> ঠাকুরগাঁও-৩ </option>
-                <option> দিনাজপুর-১ </option>
-                <option> দিনাজপুর-২ </option>
-                <option> দিনাজপুর-৩ </option>
-                <option> দিনাজপুর-৪ </option>
-                <option> দিনাজপুর-৫ </option>
-                <option> দিনাজপুর-৬ </option>
-                <option> নীলফামারী-১ </option>
-                <option> নীলফামারী-২ </option>
-                <option> নীলফামারী-৩ </option>
-                <option> নীলফামারী-৪ </option>
-                <option> লালমনিরহাট-১ </option>
-                <option> লালমনিরহাট-২ </option>
-                <option> লালমনিরহাট-৩ </option>
-                <option> রংপুর-১ </option>
-                <option> রংপুর-২ </option>
-                <option> রংপুর-৩ </option>
-                <option> রংপুর-৪ </option>
-                <option> রংপুর-৫ </option>
-                <option> রংপুর-৬ </option>
-                <option> কুড়িগ্রাম-১ </option>
-                <option> কুড়িগ্রাম-২ </option>
-                <option> কুড়িগ্রাম-৩ </option>
-                <option> কুড়িগ্রাম-৪ </option>
-                <option> গাইবান্ধা-১ </option>
-                <option> গাইবান্ধা-২ </option>
-                <option> গাইবান্ধা-৩ </option>
-                <option> গাইবান্ধা-৪ </option>
-                <option> গাইবান্ধা-৫ </option>
-                <option> জয়পুরহাট-১ </option>
-                <option> জয়পুরহাট-২ </option>
-                <option> বগুড়া-১ </option>
-                <option> বগুড়া-২ </option>
-                <option> বগুড়া-৩ </option>
-                <option> বগুড়া-৪ </option>
-                <option> বগুড়া-৫ </option>
-                <option> বগুড়া-৬ </option>
-                <option> সিরাজগঞ্জ-১ </option>
-                <option> সিরাজগঞ্জ-২ </option>
-                <option> সিরাজগঞ্জ-৩ </option>
-                <option> সিরাজগঞ্জ-৪ </option>
-                <option> সিরাজগঞ্জ-৫ </option>
-                <option> সিরাজগঞ্জ-৬ </option>
-                <option> পাবনা-১ </option>
-                <option> পাবনা-২ </option>
-                <option> পাবনা-৩ </option>
-                <option> পাবনা-৪ </option>
-                <option> পাবনা-৫ </option>
-                <option> নাটোর-১ </option>
-                <option> নাটোর-২ </option>
-                <option> নাটোর-৩ </option>
-                <option> নাটোর-৪ </option>
-                <option> রাজশাহী-১ </option>
-                <option> রাজশাহী-২ </option>
-                <option> রাজশাহী-৩ </option>
-                <option> রাজশাহী-৪ </option>
-                <option> রাজশাহী-৫ </option>
-                <option> রাজশাহী-৬ </option>
-                <option> চাঁপাইনবাবগঞ্জ-১ </option>
-                <option> চাঁপাইনবাবগঞ্জ-২ </option>
-                <option> চাঁপাইনবাবগঞ্জ-৩ </option>
-                <option> নওগাঁ-১ </option>
-                <option> নওগাঁ-২ </option>
-                <option> নওগাঁ-৩ </option>
-                <option> নওগাঁ-৪ </option>
-                <option> নওগাঁ-৫ </option>
-                <option> নওগাঁ-৬ </option>
-                <option> খুলনা-১ </option>
-                <option> খুলনা-২ </option>
-                <option> খুলনা-৩ </option>
-                <option> খুলনা-৪ </option>
-                <option> খুলনা-৫ </option>
-                <option> খুলনা-৬ </option>
-                <option> বাগেরহাট-১ </option>
-                <option> বাগেরহাট-২ </option>
-                <option> বাগেরহাট-৩ </option>
-                <option> বাগেরহাট-৪ </option>
-                <option> যশোর-১ </option>
-                <option> যশোর-২ </option>
-                <option> যশোর-৩ </option>
-                <option> যশোর-৪ </option>
-                <option> যশোর-৫ </option>
-                <option> যশোর-৬ </option>
-                <option> ঝিনাইদহ-১ </option>
-                <option> ঝিনাইদহ-২ </option>
-                <option> ঝিনাইদহ-৩ </option>
-                <option> ঝিনাইদহ-৪ </option>
-                <option> মাগুরা-১ </option>
-                <option> মাগুরা-২ </option>
-                <option> নড়াইল-১ </option>
-                <option> নড়াইল-২ </option>
-                <option> কুষ্টিয়া-১ </option>
-                <option> কুষ্টিয়া-২ </option>
-                <option> কুষ্টিয়া-৩ </option>
-                <option> কুষ্টিয়া-৪ </option>
-                <option> চুয়াডাঙ্গা-১ </option>
-                <option> চুয়াডাঙ্গা-২ </option>
-                <option> মেহেরপুর-১ </option>
-                <option> মেহেরপুর-২ </option>
-                <option> বরিশাল-১ </option>
-                <option> বরিশাল-২ </option>
-                <option> বরিশাল-৩ </option>
-                <option> বরিশাল-৪ </option>
-                <option> বরিশাল-৫ </option>
-                <option> বরিশাল-৬ </option>
-                <option> ঝালকাঠী-১ </option>
-                <option> ঝালকাঠী-২ </option>
-                <option> পিরোজপুর-১ </option>
-                <option> পিরোজপুর-২ </option>
-                <option> পটুয়াখালী-১ </option>
-                <option> পটুয়াখালী-২ </option>
-                <option> পটুয়াখালী-৩ </option>
-                <option> পটুয়াখালী-৪ </option>
-                <option> ভোলা-১ </option>
-                <option> ভোলা-২ </option>
-                <option> ভোলা-৩ </option>
-                <option> ভোলা-৪ </option>
-                <option> বরগুনা-১ </option>
-                <option> বরগুনা-২ </option>
-                <option> সিলেট-১ </option>
-                <option> সিলেট-২ </option>
-                <option> সিলেট-৩ </option>
-                <option> সিলেট-৪ </option>
-                <option> সিলেট-৫ </option>
-                <option> সিলেট-৬ </option>
-                <option> মৌলভীবাজার-১ </option>
-                <option> মৌলভীবাজার-২ </option>
-                <option> মৌলভীবাজার-৩ </option>
-                <option> মৌলভীবাজার-৪ </option>
-                <option> সুনামগঞ্জ-১ </option>
-                <option> সুনামগঞ্জ-২ </option>
-                <option> সুনামগঞ্জ-৩ </option>
-                <option> সুনামগঞ্জ-৪ </option>
-                <option> সুনামগঞ্জ-৫ </option>
-                <option> হবিগঞ্জ-১ </option>
-                <option> হবিগঞ্জ-২ </option>
-                <option> হবিগঞ্জ-৩ </option>
-                <option> হবিগঞ্জ-৪ </option>
-                <option> ব্রাহ্মণবাড়িয়া-১ </option>
-                <option> ব্রাহ্মণবাড়িয়া-২ </option>
-                <option> ব্রাহ্মণবাড়িয়া-৩ </option>
-                <option> ব্রাহ্মণবাড়িয়া-৪ </option>
-                <option> ব্রাহ্মণবাড়িয়া-৫ </option>
-                <option> ব্রাহ্মণবাড়িয়া-৬ </option>
-                <option> কুমিল্লা-১ </option>
-                <option> কুমিল্লা-২ </option>
-                <option> কুমিল্লা-৩ </option>
-                <option> কুমিল্লা-৪ </option>
-                <option> কুমিল্লা-৫ </option>
-                <option> কুমিল্লা-৬ </option>
-                <option> কুমিল্লা-৭ </option>
-                <option> কুমিল্লা-৮ </option>
-                <option> কুমিল্লা-৯ </option>
-                <option> কুমিল্লা-১০ </option>
-                <option> কুমিল্লা-১১ </option>
-                <option> চাঁদপুর-১ </option>
-                <option> চাঁদপুর-২ </option>
-                <option> চাঁদপুর-৩ </option>
-                <option> চাঁদপুর-৪ </option>
-                <option> চাঁদপুর-৫ </option>
-                <option> ফেনী-১ </option>
-                <option> ফেনী-২ </option>
-                <option> ফেনী-৩ </option>
-                <option> নোয়াখালী-১ </option>
-                <option> নোয়াখালী-২ </option>
-                <option> নোয়াখালী-৩ </option>
-                <option> নোয়াখালী-৪ </option>
-                <option> নোয়াখালী-৫ </option>
-                <option> নোয়াখালী-৬ </option>
-                <option> লক্ষ্মীপুর-১ </option>
-                <option> লক্ষ্মীপুর-২ </option>
-                <option> লক্ষ্মীপুর-৩ </option>
-                <option> লক্ষ্মীপুর-৪ </option>
-                <option> চট্টগ্রাম-১ </option>
-                <option> চট্টগ্রাম-২ </option>
-                <option> চট্টগ্রাম-৩ </option>
-                <option> চট্টগ্রাম-৪ </option>
-                <option> চট্টগ্রাম-৫ </option>
-                <option> চট্টগ্রাম-৬ </option>
-                <option> চট্টগ্রাম-৭ </option>
-                <option> চট্টগ্রাম-৮ </option>
-                <option> চট্টগ্রাম-৯ </option>
-                <option> চট্টগ্রাম-১০ </option>
-                <option> চট্টগ্রাম-১১ </option>
-                <option> চট্টগ্রাম-১২ </option>
-                <option> চট্টগ্রাম-১৩ </option>
-                <option> চট্টগ্রাম-১৪ </option>
-                <option> চট্টগ্রাম-১৫ </option>
-                <option> চট্টগ্রাম-১৬ </option>
-                <option> কক্সবাজার-১ </option>
-                <option> কক্সবাজার-২ </option>
-                <option> কক্সবাজার-৩ </option>
-                <option> কক্সবাজার-৪ </option>
-                <option> খাগড়াছড়ি </option>
-                <option> রাঙ্গামাটি </option>
-                <option> বান্দরবান </option>
-                <option> নারায়ণগঞ্জ-১ </option>
-                <option> নারায়ণগঞ্জ-২ </option>
-                <option> নারায়ণগঞ্জ-৩ </option>
-                <option> নারায়ণগঞ্জ-৪ </option>
-                <option> নারায়ণগঞ্জ-৫ </option>
-                <option> মুন্সিগঞ্জ-১ </option>
-                <option> মুন্সিগঞ্জ-২ </option>
-                <option> মুন্সিগঞ্জ-৩ </option>
-                <option> গাজীপুর-১ </option>
-                <option> গাজীপুর-২ </option>
-                <option> গাজীপুর-৩ </option>
-                <option> গাজীপুর-৪ </option>
-                <option> গাজীপুর-৫ </option>
-                <option> টাঙ্গাইল-১ </option>
-                <option> টাঙ্গাইল-২ </option>
-                <option> টাঙ্গাইল-৩ </option>
-                <option> টাঙ্গাইল-৪ </option>
-                <option> টাঙ্গাইল-৫ </option>
-                <option> টাঙ্গাইল-৬ </option>
-                <option> টাঙ্গাইল-৭ </option>
-                <option> টাঙ্গাইল-৮ </option>
-                <option> কিশোরগঞ্জ-১ </option>
-                <option> কিশোরগঞ্জ-২ </option>
-                <option> কিশোরগঞ্জ-৩ </option>
-                <option> কিশোরগঞ্জ-৪ </option>
-                <option> কিশোরগঞ্জ-৫ </option>
-                <option> কিশোরগঞ্জ-৬ </option>
-                <option> ময়মনসিংহ-১ </option>
-                <option> ময়মনসিংহ-২ </option>
-                <option> ময়মনসিংহ-৩ </option>
-                <option> ময়মনসিংহ-৪ </option>
-                <option> ময়মনসিংহ-৫ </option>
-                <option> ময়মনসিংহ-৬ </option>
-                <option> ময়মনসিংহ-৭ </option>
-                <option> ময়মনসিংহ-৮ </option>
-                <option> ময়মনসিংহ-৯ </option>
-                <option> ময়মনসিংহ-১০ </option>
-                <option> জামালপুর-১ </option>
-                <option> জামালপুর-২ </option>
-                <option> জামালপুর-৩ </option>
-                <option> জামালপুর-৪ </option>
-                <option> জামালপুর-৫ </option>
-                <option> শেরপুর-১ </option>
-                <option> শেরপুর-২ </option>
-                <option> শেরপুর-৩ </option>
-                <option> নেত্রকোণা-১ </option>
-                <option> নেত্রকোণা-২ </option>
-                <option> নেত্রকোণা-৩ </option>
-                <option> নেত্রকোণা-৪ </option>
-                <option> নেত্রকোণা-৫ </option>
-                <option> ঢাকা-১ </option>
-                <option> ঢাকা-২ </option>
-                <option> ঢাকা-৩ </option>
-                <option> ঢাকা-৪ </option>
-                <option> ঢাকা-৫ </option>
-                <option> ঢাকা-৬ </option>
-                <option> ঢাকা-৭ </option>
-                <option> ঢাকা-৮ </option>
-                <option> ঢাকা-৯ </option>
-                <option> ঢাকা-১০ </option>
-                <option> ঢাকা-১১ </option>
-                <option> ঢাকা-১২ </option>
-                <option> ঢাকা-১৩ </option>
-                <option> ঢাকা-১৪ </option>
-                <option> ঢাকা-১৫ </option>
-                <option> ঢাকা-১৬ </option>
-                <option> ঢাকা-১৭ </option>
-                <option> ঢাকা-১৮ </option>
-                <option> ঢাকা-১৯ </option>
-                <option> ঢাকা-২০ </option>
-                <option> ফরিদপুর-১ </option>
-                <option> ফরিদপুর-২ </option>
-                <option> ফরিদপুর-৩ </option>
-                <option> ফরিদপুর-৪ </option>
-                <option> ফরিদপুর-৫ </option>
-                <option> গোপালগঞ্জ-১ </option>
-                <option> গোপালগঞ্জ-২ </option>
-                <option> গোপালগঞ্জ-৩ </option>
-                <option> মাদারীপুর-১ </option>
-                <option> মাদারীপুর-২ </option>
-                <option> মাদারীপুর-৩ </option>
-                <option> শরীয়তপুর-১ </option>
-                <option> শরীয়তপুর-২ </option>
-                <option> শরীয়তপুর-৩ </option>
-                <option> রাজবাড়ী-১ </option>
-                <option> রাজবাড়ী-২ </option>
-                <option> মানিকগঞ্জ-১ </option>
-                <option> মানিকগঞ্জ-২ </option>
-                <option> মানিকগঞ্জ-৩ </option>
-                <option> মুন্সিগঞ্জ-১ </option>
-                <option> মুন্সিগঞ্জ-২ </option>
-                <option> মুন্সিগঞ্জ-৩ </option>
-                <option> নরসিংদী-১ </option>
-                <option> নরসিংদী-২ </option>
-                <option> নরসিংদী-৩ </option>
-                <option> নরসিংদী-৪ </option>
-                <option> নরসিংদী-৫ </option>
-                <option> নারায়ণগঞ্জ-১ </option>
-                <option> নারায়ণগঞ্জ-২ </option>
-                <option> নারায়ণগঞ্জ-৩ </option>
-                <option> নারায়ণগঞ্জ-৪ </option>
-                <option> নারায়ণগঞ্জ-৫ </option>
-            </select>
-            <button class="search-btn">
-                <i class="fas fa-search"></i> অনুসন্ধান
-            </button>
-        </div>
+        <form action="candidateDetails.html" method="get">
+            <div class="search-filters">
+                <select id="divisionSelect" name="division">
+                    <option value="">বিভাগ নির্বাচন করুন</option>
+                    <option value="ঢাকা">ঢাকা</option>
+                    <option value="চট্টগ্রাম">চট্টগ্রাম</option>
+                    <option value="রাজশাহী">রাজশাহী</option>
+                    <option value="খুলনা">খুলনা</option>
+                    <option value="বরিশাল">বরিশাল</option>
+                    <option value="সিলেট">সিলেট</option>
+                    <option value="রংপুর">রংপুর</option>
+                    <option value="ময়মনসিংহ">ময়মনসিংহ</option>
+                </select>
+                <select id="districtSelect" name="district">
+                    <option value="">জেলা নির্বাচন করুন</option>
+                </select>
+                <select id="constituencySelect" name="constituency">
+                    <option value="">আসন নির্বাচন করুন</option>
+                </select>
+                <input type="hidden" id="selectedConstituency" name="selectedConstituencyValue">
+                <button type="submit" class="search-btn">
+                    <i class="fas fa-search"></i> অনুসন্ধান
+                </button>
+            </div>
+        </form>
     </section>
-
     <!-- Info Cards Section -->
     <section class="container info-section">
         <div class="info-header">
@@ -811,146 +444,510 @@
 </html>
 
 <script>
-const electoralData = {
-  "বরিশাল": {
-    "বরগুনা": ["বরগুনা-১", "বরগুনা-২"],
-    "বরিশাল": ["বরিশাল-১", "বরিশাল-২", "বরিশাল-৩", "বরিশাল-৪", "বরিশাল-৫", "বরিশাল-৬"],
-    "ভোলা": ["ভোলা-১", "ভোলা-২", "ভোলা-৩", "ভোলা-৪"],
-    "ঝালকাঠি": ["ঝালকাঠি-১", "ঝালকাঠি-২"],
-    "পটুয়াখালী": ["পটুয়াখালী-১", "পটুয়াখালী-২", "পটুয়াখালী-৩", "পটুয়াখালী-৪"],
-    "পিরোজপুর": ["পিরোজপুর-১", "পিরোজপুর-২", "পিরোজপুর-৩"]
-  },
-  "চট্টগ্রাম": {
-    "বান্দরবান": ["বান্দরবান"],
-    "ব্রাহ্মণবাড়িয়া": ["ব্রাহ্মণবাড়িয়া-১", "ব্রাহ্মণবাড়িয়া-২", "ব্রাহ্মণবাড়িয়া-৩", "ব্রাহ্মণবাড়িয়া-৪", "ব্রাহ্মণবাড়িয়া-৫", "ব্রাহ্মণবাড়িয়া-৬"],
-    "চাঁদপুর": ["চাঁদপুর-১", "চাঁদপুর-২", "চাঁদপুর-৩", "চাঁদপুর-৪", "চাঁদপুর-৫"],
-    "চট্টগ্রাম": ["চট্টগ্রাম-১", "চট্টগ্রাম-২", "চট্টগ্রাম-৩", "চট্টগ্রাম-৪", "চট্টগ্রাম-৫", "চট্টগ্রাম-৬", "চট্টগ্রাম-৭", "চট্টগ্রাম-৮", "চট্টগ্রাম-৯", "চট্টগ্রাম-১০", "চট্টগ্রাম-১১", "চট্টগ্রাম-১২", "চট্টগ্রাম-১৩", "চট্টগ্রাম-১৪", "চট্টগ্রাম-১৫", "চট্টগ্রাম-১৬"],
-    "কুমিল্লা": ["কুমিল্লা-১", "কুমিল্লা-২", "কুমিল্লা-৩", "কুমিল্লা-৪", "কুমিল্লা-৫", "কুমিল্লা-৬", "কুমিল্লা-৭", "কুমিল্লা-৮", "কুমিল্লা-৯", "কুমিল্লা-১০", "কুমিল্লা-১১"],
-    "কক্সবাজার": ["কক্সবাজার-১", "কক্সবাজার-২", "কক্সবাজার-৩", "কক্সবাজার-৪"],
-    "ফেনী": ["ফেনী-১", "ফেনী-২", "ফেনী-৩"],
-    "খাগড়াছড়ি": ["খাগড়াছড়ি"],
-    "লক্ষ্মীপুর": ["লক্ষ্মীপুর-১", "লক্ষ্মীপুর-২", "লক্ষ্মীপুর-৩", "লক্ষ্মীপুর-৪"],
-    "নোয়াখালী": ["নোয়াখালী-১", "নোয়াখালী-২", "নোয়াখালী-৩", "নোয়াখালী-৪", "নোয়াখালী-৫", "নোয়াখালী-৬"],
-    "রাঙ্গামাটি": ["রাঙ্গামাটি"]
-  },
-  "ঢাকা": {
-    "ঢাকা": ["ঢাকা-১", "ঢাকা-২", "ঢাকা-৩", "ঢাকা-৪", "ঢাকা-৫", "ঢাকা-৬", "ঢাকা-৭", "ঢাকা-৮", "ঢাকা-৯", "ঢাকা-১০", "ঢাকা-১১", "ঢাকা-১২", "ঢাকা-১৩", "ঢাকা-১৪", "ঢাকা-১৫", "ঢাকা-১৬", "ঢাকা-১৭", "ঢাকা-১৮", "ঢাকা-১৯", "ঢাকা-২০"],
-    "ফরিদপুর": ["ফরিদপুর-১", "ফরিদপুর-২", "ফরিদপুর-৩", "ফরিদপুর-৪"],
-    "গাজীপুর": ["গাজীপুর-১", "গাজীপুর-২", "গাজীপুর-৩", "গাজীপুর-৪", "গাজীপুর-৫"],
-    "গোপালগঞ্জ": ["গোপালগঞ্জ-১", "গোপালগঞ্জ-২", "গোপালগঞ্জ-৩"],
-    "কিশোরগঞ্জ": ["কিশোরগঞ্জ-১", "কিশোরগঞ্জ-২", "কিশোরগঞ্জ-৩", "কিশোরগঞ্জ-৪", "কিশোরগঞ্জ-৫", "কিশোরগঞ্জ-৬"],
-    "মাদারীপুর": ["মাদারীপুর-১", "মাদারীপুর-২", "মাদারীপুর-৩"],
-    "মানিকগঞ্জ": ["মানিকগঞ্জ-১", "মানিকগঞ্জ-২", "মানিকগঞ্জ-৩"],
-    "মুন্সিগঞ্জ": ["মুন্সিগঞ্জ-১", "মুন্সিগঞ্জ-২", "মুন্সিগঞ্জ-৩"],
-    "নারায়ণগঞ্জ": ["নারায়ণগঞ্জ-১", "নারায়ণগঞ্জ-২", "নারায়ণগঞ্জ-৩", "নারায়ণগঞ্জ-৪", "নারায়ণগঞ্জ-৫"],
-    "নরসিংদী": ["নরসিংদী-১", "নরসিংদী-২", "নরসিংদী-৩", "নরসিংদী-৪", "নরসিংদী-৫"],
-    "রাজবাড়ী": ["রাজবাড়ী-১", "রাজবাড়ী-২"],
-    "শরীয়তপুর": ["শরীয়তপুর-১", "শরীয়তপুর-২", "শরীয়তপুর-৩"],
-    "টাঙ্গাইল": ["টাঙ্গাইল-১", "টাঙ্গাইল-২", "টাঙ্গাইল-৩", "টাঙ্গাইল-৪", "টাঙ্গাইল-৫", "টাঙ্গাইল-৬", "টাঙ্গাইল-৭", "টাঙ্গাইল-৮"]
-  },
-  "খুলনা": {
-    "বাগেরহাট": ["বাগেরহাট-১", "বাগেরহাট-২", "বাগেরহাট-৩", "বাগেরহাট-৪"],
-    "চুয়াডাঙ্গা": ["চুয়াডাঙ্গা-১", "চুয়াডাঙ্গা-২"],
-    "যশোর": ["যশোর-১", "যশোর-২", "যশোর-৩", "যশোর-৪", "যশোর-৫", "যশোর-৬"],
-    "ঝিনাইদহ": ["ঝিনাইদহ-১", "ঝিনাইদহ-২", "ঝিনাইদহ-৩", "ঝিনাইদহ-৪"],
-    "খুলনা": ["খুলনা-১", "খুলনা-২", "খুলনা-৩", "খুলনা-৪", "খুলনা-৫", "খুলনা-৬"],
-    "কুষ্টিয়া": ["কুষ্টিয়া-১", "কুষ্টিয়া-২", "কুষ্টিয়া-৩", "কুষ্টিয়া-৪"],
-    "মাগুরা": ["মাগুরা-১", "মাগুরা-২"],
-    "মেহেরপুর": ["মেহেরপুর-১", "মেহেরপুর-২"],
-    "নড়াইল": ["নড়াইল-১", "নড়াইল-২"],
-    "সাতক্ষীরা": ["সাতক্ষীরা-১", "সাতক্ষীরা-২", "সাতক্ষীরা-৩", "সাতক্ষীরা-৪"]
-  },
-  "ময়মনসিংহ": {
-    "জামালপুর": ["জামালপুর-১", "জামালপুর-২", "জামালপুর-৩", "জামালপুর-৪", "জামালপুর-৫"],
-    "ময়মনসিংহ": ["ময়মনসিংহ-১", "ময়মনসিংহ-২", "ময়মনসিংহ-৩", "ময়মনসিংহ-৪", "ময়মনসিংহ-৫", "ময়মনসিংহ-৬", "ময়মনসিংহ-৭", "ময়মনসিংহ-৮", "ময়মনসিংহ-৯", "ময়মনসিংহ-১০", "ময়মনসিংহ-১১"],
-    "নেত্রকোনা": ["নেত্রকোনা-১", "নেত্রকোনা-২", "নেত্রকোনা-৩", "নেত্রকোনা-৪", "নেত্রকোনা-৫"],
-    "শেরপুর": ["শেরপুর-১", "শেরপুর-২", "শেরপুর-৩"]
-  },
-  "রাজশাহী": {
-    "বগুড়া": ["বগুড়া-১", "বগুড়া-২", "বগুড়া-৩", "বগুড়া-৪", "বগুড়া-৫", "বগুড়া-৬", "বগুড়া-৭"],
-    "চাঁপাইনবাবগঞ্জ": ["চাঁপাইনবাবগঞ্জ-১", "চাঁপাইনবাবগঞ্জ-২", "চাঁপাইনবাবগঞ্জ-৩"],
-    "জয়পুরহাট": ["জয়পুরহাট-১", "জয়পুরহাট-২"],
-    "নওগাঁ": ["নওগাঁ-১", "নওগাঁ-২", "নওগাঁ-৩", "নওগাঁ-৪", "নওগাঁ-৫", "নওগাঁ-৬"],
-    "নাটোর": ["নাটোর-১", "নাটোর-২", "নাটোর-৩", "নাটোর-৪"],
-    "পাবনা": ["পাবনা-১", "পাবনা-২", "পাবনা-৩", "পাবনা-৪", "পাবনা-৫"],
-    "রাজশাহী": ["রাজশাহী-১", "রাজশাহী-২", "রাজশাহী-৩", "রাজশাহী-৪", "রাজশাহী-৫", "রাজশাহী-৬"],
-    "সিরাজগঞ্জ": ["সিরাজগঞ্জ-১", "সিরাজগঞ্জ-২", "সিরাজগঞ্জ-৩", "সিরাজগঞ্জ-৪", "সিরাজগঞ্জ-৫", "সিরাজগঞ্জ-৬"]
-  },
-  "রংপুর": {
-    "দিনাজপুর": ["দিনাজপুর-১", "দিনাজপুর-২", "দিনাজপুর-৩", "দিনাজপুর-৪", "দিনাজপুর-৫", "দিনাজপুর-৬"],
-    "গাইবান্ধা": ["গাইবান্ধা-১", "গাইবান্ধা-২", "গাইবান্ধা-৩", "গাইবান্ধা-৪", "গাইবান্ধা-৫"],
-    "কুড়িগ্রাম": ["কুড়িগ্রাম-১", "কুড়িগ্রাম-২", "কুড়িগ্রাম-৩", "কুড়িগ্রাম-৪"],
-    "লালমনিরহাট": ["লালমনিরহাট-১", "লালমনিরহাট-২", "লালমনিরহাট-৩"],
-    "নীলফামারী": ["নীলফামারী-১", "নীলফামারী-২", "নীলফামারী-৩", "নীলফামারী-৪"],
-    "পঞ্চগড়": ["পঞ্চগড়-১", "পঞ্চগড়-২"],
-    "রংপুর": ["রংপুর-১", "রংপুর-২", "রংপুর-৩", "রংপুর-৪", "রংপুর-৫", "রংপুর-৬"],
-    "ঠাকুরগাঁও": ["ঠাকুরগাঁও-১", "ঠাকুরগাঁও-২", "ঠাকুরগাঁও-৩"]
-  },
-  "সিলেট": {
-    "হবিগঞ্জ": ["হবিগঞ্জ-১", "হবিগঞ্জ-২", "হবিগঞ্জ-৩", "হবিগঞ্জ-৪"],
-    "মৌলভীবাজার": ["মৌলভীবাজার-১", "মৌলভীবাজার-২", "মৌলভীবাজার-৩", "মৌলভীবাজার-৪"],
-    "সুনামগঞ্জ": ["সুনামগঞ্জ-১", "সুনামগঞ্জ-২", "সুনামগঞ্জ-৩", "সুনামগঞ্জ-৪", "সুনামগঞ্জ-৫"],
-    "সিলেট": ["সিলেট-১", "সিলেট-২", "সিলেট-৩", "সিলেট-৪", "সিলেট-৫", "সিলেট-৬"]
-  }
-};
-
-// --- নিচে ফাংশনগুলো যোগ করুন যা ড্রপডাউন আপডেট করবে ---
-
-// HTML এলিমেন্টগুলো সিলেক্ট করুন (নিশ্চিত করুন আপনার HTML এ এই আইডিগুলো আছে)
-const divisionSelect = document.getElementById('divisionSelect');
-const districtSelect = document.getElementById('districtSelect');
-const constituencySelect = document.getElementById('constituencySelect');
-
-// বিভাগ সিলেক্ট করলে জেলা আপডেট করার ফাংশন
-function updateDistrictOptions(division) {
-  // আগের জেলার অপশনগুলো মুছে ফেলুন (প্রথমটি ছাড়া)
-  districtSelect.innerHTML = '<option value="">জেলা নির্বাচন করুন</option>';
-  // আসন ড্রপডাউনও রিসেট করুন
-  constituencySelect.innerHTML = '<option value="">আসন নির্বাচন করুন</option>';
-
-  if (division && electoralData[division]) {
-    const districts = Object.keys(electoralData[division]).sort(); // জেলাগুলো বর্ণানুক্রমে সাজানো
-    districts.forEach(district => {
-      const option = document.createElement('option');
-      option.value = district;
-      option.textContent = district;
-      districtSelect.appendChild(option);
-    });
-  }
-}
-
-// জেলা সিলেক্ট করলে আসন আপডেট করার ফাংশন
-function updateConstituencyOptions(division, district) {
-  // আগের আসনের অপশনগুলো মুছে ফেলুন (প্রথমটি ছাড়া)
-  constituencySelect.innerHTML = '<option value="">আসন নির্বাচন করুন</option>';
-
-  if (division && district && electoralData[division] && electoralData[division][district]) {
-    const constituencies = electoralData[division][district].sort(); // আসনগুলো সাজানো
-    constituencies.forEach(constituency => {
-      const option = document.createElement('option');
-      option.value = constituency;
-      option.textContent = constituency;
-      constituencySelect.appendChild(option);
-    });
-  }
-}
-
-
-if (divisionSelect) {
-    divisionSelect.addEventListener('change', function() {
-        const selectedDivision = this.value;
-        updateDistrictOptions(selectedDivision);
-    });
-}
-
-
-if (districtSelect) {
-    districtSelect.addEventListener('change', function() {
-        const selectedDivision = divisionSelect.value; // 
-        const selectedDistrict = this.value;
-        updateConstituencyOptions(selectedDivision, selectedDistrict);
-    });
-}
-
-
-</script>
+    const electoralData = {
+      "ঢাকা": {
+        "ঢাকা": [
+          "ঢাকা-১",
+          "ঢাকা-২",
+          "ঢাকা-৩",
+          "ঢাকা-৪",
+          "ঢাকা-৫",
+          "ঢাকা-৬",
+          "ঢাকা-৭",
+          "ঢাকা-৮",
+          "ঢাকা-৯",
+          "ঢাকা-১০",
+          "ঢাকা-১১",
+          "ঢাকা-১২",
+          "ঢাকা-১৩",
+          "ঢাকা-১৪",
+          "ঢাকা-১৫",
+          "ঢাকা-১৬",
+          "ঢাকা-১৭",
+          "ঢাকা-১৮",
+          "ঢাকা-১৯",
+          "ঢাকা-২০"
+        ],
+        "ফরিদপুর": [
+          "ফরিদপুর-১",
+          "ফরিদপুর-২",
+          "ফরিদপুর-৩",
+          "ফরিদপুর-৪",
+          "ফরিদপুর-৫"
+        ],
+        "গাজীপুর": [
+          "গাজীপুর-১",
+          "গাজীপুর-২",
+          "গাজীপুর-৩",
+          "গাজীপুর-৪",
+          "গাজীপুর-৫"
+        ],
+        "গোপালগঞ্জ": [
+          "গোপালগঞ্জ-১",
+          "গোপালগঞ্জ-২",
+          "গোপালগঞ্জ-৩"
+        ],
+        "কিশোরগঞ্জ": [
+          "কিশোরগঞ্জ-১",
+          "কিশোরগঞ্জ-২",
+          "কিশোরগঞ্জ-৩",
+          "কিশোরগঞ্জ-৪",
+          "কিশোরগঞ্জ-৫",
+          "কিশোরগঞ্জ-৬"
+        ],
+        "মাদারীপুর": [
+          "মাদারীপুর-১",
+          "মাদারীপুর-২",
+          "মাদারীপুর-৩"
+        ],
+        "মানিকগঞ্জ": [
+          "মানিকগঞ্জ-১",
+          "মানিকগঞ্জ-২",
+          "মানিকগঞ্জ-৩"
+        ],
+        "মুন্সিগঞ্জ": [
+          "মুন্সিগঞ্জ-১",
+          "মুন্সিগঞ্জ-২",
+          "মুন্সিগঞ্জ-৩"
+        ],
+        "নারায়ণগঞ্জ": [
+          "নারায়ণগঞ্জ-১",
+          "নারায়ণগঞ্জ-২",
+          "নারায়ণগঞ্জ-৩",
+          "নারায়ণগঞ্জ-৪",
+          "নারায়ণগঞ্জ-৫"
+        ],
+        "নরসিংদী": [
+          "নরসিংদী-১",
+          "নরসিংদী-২",
+          "নরসিংদী-৩",
+          "নরসিংদী-৪",
+          "নরসিংদী-৫"
+        ],
+        "রাজবাড়ী": [
+          "রাজবাড়ী-১",
+          "রাজবাড়ী-২"
+        ],
+        "শরীয়তপুর": [
+          "শরীয়তপুর-১",
+          "শরীয়তপুর-২",
+          "শরীয়তপুর-৩"
+        ],
+        "টাঙ্গাইল": [
+          "টাঙ্গাইল-১",
+          "টাঙ্গাইল-২",
+          "টাঙ্গাইল-৩",
+          "টাঙ্গাইল-৪",
+          "টাঙ্গাইল-৫",
+          "টাঙ্গাইল-৬",
+          "টাঙ্গাইল-৭",
+          "টাঙ্গাইল-৮"
+        ]
+      },
+      "ময়মনসিংহ": {
+        "ময়মনসিংহ": [
+          "ময়মনসিংহ-১",
+          "ময়মনসিংহ-২",
+          "ময়মনসিংহ-৩",
+          "ময়মনসিংহ-৪",
+          "ময়মনসিংহ-৫",
+          "ময়মনসিংহ-৬",
+          "ময়মনসিংহ-৭",
+          "ময়মনসিংহ-৮",
+          "ময়মনসিংহ-৯",
+          "ময়মনসিংহ-১০"
+        ],
+        "জামালপুর": [
+          "জামালপুর-১",
+          "জামালপুর-২",
+          "জামালপুর-৩",
+          "জামালপুর-৪",
+          "জামালপুর-৫"
+        ],
+        "নেত্রকোণা": [
+          "নেত্রকোণা-১",
+          "নেত্রকোণা-২",
+          "নেত্রকোণা-৩",
+          "নেত্রকোণা-৪",
+          "নেত্রকোণা-৫"
+        ],
+        "শেরপুর": [
+          "শেরপুর-১",
+          "শেরপুর-২",
+          "শেরপুর-৩"
+        ]
+      },
+      "চট্টগ্রাম": {
+        "চট্টগ্রাম": [
+          "চট্টগ্রাম-১",
+          "চট্টগ্রাম-২",
+          "চট্টগ্রাম-৩",
+          "চট্টগ্রাম-৪",
+          "চট্টগ্রাম-৫",
+          "চট্টগ্রাম-৬",
+          "চট্টগ্রাম-৭",
+          "চট্টগ্রাম-৮",
+          "চট্টগ্রাম-৯",
+          "চট্টগ্রাম-১০",
+          "চট্টগ্রাম-১১",
+          "চট্টগ্রাম-১২",
+          "চট্টগ্রাম-১৩",
+          "চট্টগ্রাম-১৪",
+          "চট্টগ্রাম-১৫",
+          "চট্টগ্রাম-১৬"
+        ],
+        "বান্দরবান": [
+          "বান্দরবান"
+        ],
+        "ব্রাহ্মণবাড়িয়া": [
+          "ব্রাহ্মণবাড়িয়া-১",
+          "ব্রাহ্মণবাড়িয়া-২",
+          "ব্রাহ্মণবাড়িয়া-৩",
+          "ব্রাহ্মণবাড়িয়া-৪",
+          "ব্রাহ্মণবাড়িয়া-৫",
+          "ব্রাহ্মণবাড়িয়া-৬"
+        ],
+        "চাঁদপুর": [
+          "চাঁদপুর-১",
+          "চাঁদপুর-২",
+          "চাঁদপুর-৩",
+          "চাঁদপুর-৪",
+          "চাঁদপুর-৫"
+        ],
+        "কুমিল্লা": [
+          "কুমিল্লা-১",
+          "কুমিল্লা-২",
+          "কুমিল্লা-৩",
+          "কুমিল্লা-৪",
+          "কুমিল্লা-৫",
+          "কুমিল্লা-৬",
+          "কুমিল্লা-৭",
+          "কুমিল্লা-৮",
+          "কুমিল্লা-৯",
+          "কুমিল্লা-১০",
+          "কুমিল্লা-১১"
+        ],
+        "কক্সবাজার": [
+          "কক্সবাজার-১",
+          "কক্সবাজার-২",
+          "কক্সবাজার-৩",
+          "কক্সবাজার-৪"
+        ],
+        "ফেনী": [
+          "ফেনী-১",
+          "ফেনী-২",
+          "ফেনী-৩"
+        ],
+        "খাগড়াছড়ি": [
+          "খাগড়াছড়ি"
+        ],
+        "লক্ষ্মীপুর": [
+          "লক্ষ্মীপুর-১",
+          "লক্ষ্মীপুর-২",
+          "লক্ষ্মীপুর-৩",
+          "লক্ষ্মীপুর-৪"
+        ],
+        "নোয়াখালী": [
+          "নোয়াখালী-১",
+          "নোয়াখালী-২",
+          "নোয়াখালী-৩",
+          "নোয়াখালী-৪",
+          "নোয়াখালী-৫",
+          "নোয়াখালী-৬"
+        ],
+        "রাঙ্গামাটি": [
+          "রাঙ্গামাটি"
+        ]
+      },
+      "সিলেট": {
+        "সিলেট": [
+          "সিলেট-১",
+          "সিলেট-২",
+          "সিলেট-৩",
+          "সিলেট-৪",
+          "সিলেট-৫",
+          "সিলেট-৬"
+        ],
+        "হবিগঞ্জ": [
+          "হবিগঞ্জ-১",
+          "হবিগঞ্জ-২",
+          "হবিগঞ্জ-৩",
+          "হবিগঞ্জ-৪"
+        ],
+        "মৌলভীবাজার": [
+          "মৌলভীবাজার-১",
+          "মৌলভীবাজার-২",
+          "মৌলভীবাজার-৩",
+          "মৌলভীবাজার-৪"
+        ],
+        "সুনামগঞ্জ": [
+          "সুনামগঞ্জ-১",
+          "সুনামগঞ্জ-২",
+          "সুনামগঞ্জ-৩",
+          "সুনামগঞ্জ-৪",
+          "সুনামগঞ্জ-৫"
+        ]
+      },
+      "রাজশাহী": {
+        "রাজশাহী": [
+          "রাজশাহী-১",
+          "রাজশাহী-২",
+          "রাজশাহী-৩",
+          "রাজশাহী-৪",
+          "রাজশাহী-৫",
+          "রাজশাহী-৬"
+        ],
+        "জয়পুরহাট": [
+          "জয়পুরহাট-১",
+          "জয়পুরহাট-২"
+        ],
+        "নওগাঁ": [
+          "নওগাঁ-১",
+          "নওগাঁ-২",
+          "নওগাঁ-৩",
+          "নওগাঁ-৪",
+          "নওগাঁ-৫",
+          "নওগাঁ-৬"
+        ],
+        "নাটোর": [
+          "নাটোর-১",
+          "নাটোর-২",
+          "নাটোর-৩",
+          "নাটোর-৪"
+        ],
+        "পাবনা": [
+          "পাবনা-১",
+          "পাবনা-২",
+          "পাবনা-৩",
+          "পাবনা-৪",
+          "পাবনা-৫"
+        ],
+        "বগুড়া": [
+          "বগুড়া-১",
+          "বগুড়া-২",
+          "বগুড়া-৩",
+          "বগুড়া-৪",
+          "বগুড়া-৫",
+          "বগুড়া-৬"
+        ],
+        "চাঁপাইনবাবগঞ্জ": [
+          "চাঁপাইনবাবগঞ্জ-১",
+          "চাঁপাইনবাবগঞ্জ-২",
+          "চাঁপাইনবাবগঞ্জ-৩"
+        ],
+        "সিরাজগঞ্জ": [
+          "সিরাজগঞ্জ-১",
+          "সিরাজগঞ্জ-২",
+          "সিরাজগঞ্জ-৩",
+          "সিরাজগঞ্জ-৪",
+          "সিরাজগঞ্জ-৫",
+          "সিরাজগঞ্জ-৬"
+        ]
+      },
+      "খুলনা": {
+        "খুলনা": [
+          "খুলনা-১",
+          "খুলনা-২",
+          "খুলনা-৩",
+          "খুলনা-৪",
+          "খুলনা-৫",
+          "খুলনা-৬"
+        ],
+        "বাগেরহাট": [
+          "বাগেরহাট-১",
+          "বাগেরহাট-২",
+          "বাগেরহাট-৩",
+          "বাগেরহাট-৪"
+        ],
+        "চুয়াডাঙ্গা": [
+          "চুয়াডাঙ্গা-১",
+          "চুয়াডাঙ্গা-২"
+        ],
+        "যশোর": [
+          "যশোর-১",
+          "যশোর-২",
+          "যশোর-৩",
+          "যশোর-৪",
+          "যশোর-৫",
+          "যশোর-৬"
+        ],
+        "ঝিনাইদহ": [
+          "ঝিনাইদহ-১",
+          "ঝিনাইদহ-২",
+          "ঝিনাইদহ-৩",
+          "ঝিনাইদহ-৪"
+        ],
+        "কুষ্টিয়া": [
+          "কুষ্টিয়া-১",
+          "কুষ্টিয়া-২",
+          "কুষ্টিয়া-৩",
+          "কুষ্টিয়া-৪"
+        ],
+        "মাগুরা": [
+          "মাগুরা-১",
+          "মাগুরা-২"
+        ],
+        "মেহেরপুর": [
+          "মেহেরপুর-১",
+          "মেহেরপুর-২"
+        ],
+        "নড়াইল": [
+          "নড়াইল-১",
+          "নড়াইল-২"
+        ],
+        "সাতক্ষীরা": [
+          "সাতক্ষীরা-১",
+          "সাতক্ষীরা-২",
+          "সাতক্ষীরা-৩",
+          "সাতক্ষীরা-৪"
+        ]
+      },
+      "বরিশাল": {
+        "বরিশাল": [
+          "বরিশাল-১",
+          "বরিশাল-২",
+          "বরিশাল-৩",
+          "বরিশাল-৪",
+          "বরিশাল-৫",
+          "বরিশাল-৬"
+        ],
+        "ঝালকাঠী": [
+          "ঝালকাঠী-১",
+          "ঝালকাঠী-২"
+        ],
+        "পিরোজপুর": [
+          "পিরোজপুর-১",
+          "পিরোজপুর-২"
+        ],
+        "পটুয়াখালী": [
+          "পটুয়াখালী-১",
+          "পটুয়াখালী-২",
+          "পটুয়াখালী-৩",
+          "পটুয়াখালী-৪"
+        ],
+        "ভোলা": [
+          "ভোলা-১",
+          "ভোলা-২",
+          "ভোলা-৩",
+          "ভোলা-৪"
+        ],
+        "বরগুনা": [
+          "বরগুনা-১",
+          "বরগুনা-২"
+        ]
+      },
+      "রংপুর": {
+        "রংপুর": [
+          "রংপুর-১",
+          "রংপুর-২",
+          "রংপুর-৩",
+          "রংপুর-৪",
+          "রংপুর-৫",
+          "রংপুর-৬"
+        ],
+        "গাইবান্ধা": [
+          "গাইবান্ধা-১",
+          "গাইবান্ধা-২",
+          "গাইবান্ধা-৩",
+          "গাইবান্ধা-৪",
+          "গাইবান্ধা-৫"
+        ],
+        "কুড়িগ্রাম": [
+          "কুড়িগ্রাম-১",
+          "কুড়িগ্রাম-২",
+          "কুড়িগ্রাম-৩",
+          "কুড়িগ্রাম-৪"
+        ],
+        "লালমনিরহাট": [
+          "লালমনিরহাট-১",
+          "লালমনিরহাট-২",
+          "লালমনিরহাট-৩"
+        ],
+        "নীলফামারী": [
+          "নীলফামারী-১",
+          "নীলফামারী-২",
+          "নীলফামারী-৩",
+          "নীলফামারী-৪"
+        ],
+        "পঞ্চগড়": [
+          "পঞ্চগড়-১",
+          "পঞ্চগড়-২"
+        ],
+        "ঠাকুরগাঁও": [
+          "ঠাকুরগাঁও-১",
+          "ঠাকুরগাঁও-২",
+          "ঠাকুরগাঁও-৩"
+        ],
+        "দিনাজপুর": [
+          "দিনাজপুর-১",
+          "দিনাজপুর-২",
+          "দিনাজপুর-৩",
+          "দিনাজপুর-৪",
+          "দিনাজপুর-৫",
+          "দিনাজপুর-৬"
+        ]
+      }
+    };
+    
+    
+    
+    const divisionSelect = document.getElementById('divisionSelect');
+    const districtSelect = document.getElementById('districtSelect');
+    const constituencySelect = document.getElementById('constituencySelect');
+    const selectedConstituencyInput = document.getElementById('selectedConstituency');
+    
+    
+    function updateDistrictOptions(division) {
+      districtSelect.innerHTML = '<option value="">জেলা নির্বাচন করুন</option>';
+      constituencySelect.innerHTML = '<option value="">আসন নির্বাচন করুন</option>';
+    
+      if (division && electoralData[division]) {
+        const districts = Object.keys(electoralData[division]).sort();
+        districts.forEach(district => {
+          const option = document.createElement('option');
+          option.value = district;
+          option.textContent = district;
+          districtSelect.appendChild(option);
+        });
+      }
+    }
+    
+    function updateConstituencyOptions(division, district) {
+        constituencySelect.innerHTML = '<option value="">আসন নির্বাচন করুন</option>';
+    
+        if (division && district && electoralData[division] && electoralData[division][district]) {
+            const constituencies = electoralData[division][district].sort();
+            constituencies.forEach(constituency => {
+                const option = document.createElement('option');
+                option.value = constituency;
+                option.textContent = constituency;
+                constituencySelect.appendChild(option);
+            });
+        }
+    }
+    
+    
+    
+    if (divisionSelect) {
+        divisionSelect.addEventListener('change', function() {
+            const selectedDivision = this.value;
+            updateDistrictOptions(selectedDivision);
+        });
+    }
+    
+    
+    if (districtSelect) {
+        districtSelect.addEventListener('change', function() {
+            const selectedDivision = divisionSelect.value;
+            const selectedDistrict = this.value;
+            updateConstituencyOptions(selectedDivision, selectedDistrict);
+        });
+    }
+    
+    if (constituencySelect) {
+        constituencySelect.addEventListener('change', function() {
+            const selectedValue = this.value;
+            selectedConstituencyInput.value = selectedValue;
+        });
+    }
+        </script>
