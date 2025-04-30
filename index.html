@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নির্বাচনী তথ্য সিস্টেম</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-vote-yea"></i>
+                নির্বাচনী তথ্য সিস্টেম
+            </div>
+            <ul class="nav-links">
+                <li><a href="#"><i class="fas fa-home"></i> হোম</a></li>
+                <li><a href="#"><i class="fas fa-clipboard-list"></i> নির্বাচনসমূহ</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> নির্বাচনী তথ্য</a></li>
+                <li><a href="#"><i class="fas fa-map-marked-alt"></i> এলাকাসমূহ</a></li>
+                <li><a href="#"><i class="fas fa-download"></i> ডাউনলোড</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> সাহায্য</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="image.png">
+          <!-- <h1>জাতীয়তাবাদী দল (বিএনপি) এর নির্বাচনী তথ্য ব্যবস্থাপনা</h1> -->
+            <p>বিভাগ, জেলা ও নির্বাচনী আসন অনুযায়ী প্রার্থীদের সম্পূর্ণ তথ্য সংগ্রহশালা</p>
+            <div class="search-bar">
+                <input type="text" placeholder="অনুসন্ধান করুন">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+<section class="everything">
+    <!-- Search Section -->
+    <section class="container search-section">
+        <h2>নির্বাচনী এলাকা অনুযায়ী প্রার্থী অনুসন্ধান করুন</h2>
+        <div class="search-filters">
+            <select>
+                <option>বিভাগ নির্বাচন করুন</option>
+                <option>ঢাকা</option>
+                <option>চট্টগ্রাম</option>
+                <option>রাজশাহী</option>
+                <option>খুলনা</option>
+                <option>বরিশাল</option>
+                <option>সিলেট</option>
+                <option>রংপুর</option>
+                <option>ময়মনসিংহ</option>
+            </select>
+            <select>
+                <option>জেলা নির্বাচন করুন</option>
+                <option>ঢাকা</option>
+                <option>ফেনী</option>
+                <option>নোয়াখালী</option>
+                <option>কুমিল্লা</option>
+                <option>বামনা</option>
+            </select>
+            <select>
+                <option>আসন নির্বাচন করুন</option>
+                <option>আসন-০১</option>
+                <option>আসন-০২</option>
+                <option>আসন-০৩</option>
+                <option>আসন-০৪</option>
+                <option>আসন-০৫</option>
+                <option>আসন-০৬</option>
+                <option>আসন-০৭</option>
+                <option>আসন-০৮</option>
+            </select>
+            <button class="search-btn">
+                <i class="fas fa-search"></i> অনুসন্ধান
+            </button>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="container info-section">
+        <div class="info-header">
+            <h2>বিএনপি ও অন্যান্য দলের জনপ্রিয় প্রার্থীবৃন্দ</h2>
+            <p>সর্বাধিক দেখা হওয়া প্রার্থীদের তথ্য</p>
+        </div>
+        <div class="info-cards">
+            <!-- Card 1 -->
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header red-header">বিএনপি</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header green-header">জামায়াতে ইসলামী</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header purple-header">গণফোরাম</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <!-- Card 4 -->
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header orange-header">গণফোরাম</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <!-- Additional Cards -->
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header green-header">ইসলামী ঐক্যজোট</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header green-header">সেচ্ছাসেবক দল</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header red-header">যুবদল</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <div class="info-card-image">
+                    <!-- Image placeholder -->
+                </div>
+                <div class="info-card-header blue-header">ছাত্রদল</div>
+                <div class="info-card-content">
+                    <div class="info-card-title">নাম</div>
+                    <div class="info-meta">নির্বাচনী আসন</div>
+                    <div class="info-meta">
+                        <i class="fas fa-map-marker-alt"></i> জেলা:
+                    </div>
+                    <div class="info-meta">
+                        <i class="fas fa-th-list"></i> আসন:
+                    </div>
+                    <a href="#" class="view-details-btn">বিস্তারিত দেখুন</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="all-divisions-btn">
+            <i class="fas fa-list"></i> সকল প্রার্থী দেখুন
+        </a>
+    </section>
+
+    <!-- Division Section -->
+    <section class="container division-section">
+        <div class="division-cards">
+            <!-- Division 1 -->
+            <div class="division-card">
+                <div class="division-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="division-title">ঢাকা বিভাগ</div>
+                <div class="division-desc">ঢাকা বিভাগের ১৩টি জেলার নির্বাচনী আসন ও প্রার্থীদের তথ্য</div>
+                <a href="#" class="division-btn">বিস্তারিত দেখুন</a>
+            </div>
+            
+            <!-- Division 2 -->
+            <div class="division-card">
+                <div class="division-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <div class="division-title">চট্টগ্রাম বিভাগ</div>
+                <div class="division-desc">চট্টগ্রাম বিভাগের ১১টি জেলার নির্বাচনী আসন ও প্রার্থীদের তথ্য</div>
+                <a href="#" class="division-btn">বিস্তারিত দেখুন</a>
+            </div>
+            
+            <!-- Division 3 -->
+            <div class="division-card">
+                <div class="division-icon">
+                    <i class="fas fa-water"></i>
+                </div>
+                <div class="division-title">খুলনা বিভাগ</div>
+                <div class="division-desc">খুলনা বিভাগের ১০টি জেলার নির্বাচনী আসন ও প্রার্থীদের তথ্য</div>
+                <a href="#" class="division-btn">বিস্তারিত দেখুন</a>
+            </div>
+            
+            <!-- Division 4 -->
+            <div class="division-card">
+                <div class="division-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <div class="division-title">রাজশাহী বিভাগ</div>
+                <div class="division-desc">রাজশাহী বিভাগের ৮টি জেলার নির্বাচনী আসন ও প্রার্থীদের তথ্য</div>
+                <a href="#" class="division-btn">বিস্তারিত দেখুন</a>
+            </div>
+        </div>
+        <a href="#" class="all-divisions-btn">
+            <i class="fas fa-map-marked-alt"></i> সকল বিভাগ দেখুন
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container features-section">
+        <div class="features-title">
+            <p style="color: black;">এই সিস্টেম ব্যবহার করে আপনি যে সুবিধাগুলো পাবেন</p>
+        </div>
+        <div class="features-cards">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="feature-title">দ্রুত অনুসন্ধান</div>
+                <div class="feature-desc">বিভাগ, জেলা ও আসন অনুযায়ী প্রার্থীদের তথ্য দ্রুত খুঁজে পাবেন</div>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="feature-title">বিস্তারিত তথ্য</div>
+                <div class="feature-desc">প্রার্থীদের সম্পূর্ণ বায়োডাটা, যোগাযোগ এবং নির্বাচনী তথ্য</div>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <div class="feature-title">ডাউনলোড করুন</div>
+                <div class="feature-desc">প্রয়োজনীয় তথ্য ও ফরম ডাউনলোড করুন সহজেই</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="container stats-section">
+        <div class="stats-cards">
+            <!-- Stat 1 -->
+            <div class="stat-card">
+                <div class="stat-title">৩০০+</div>
+                <div class="stat-name">আসন সংখ্যা</div>
+            </div>
+            
+            <!-- Stat 2 -->
+            <div class="stat-card">
+                <div class="stat-title">৮০০+</div>
+                <div class="stat-name">প্রার্থী সংখ্যা</div>
+            </div>
+            
+            <!-- Stat 3 -->
+            <div class="stat-card">
+                <div class="stat-title">৬৪</div>
+                <div class="stat-name">জেলা</div>
+            </div>
+            
+            <!-- Stat 4 -->
+            <div class="stat-card">
+                <div class="stat-title">৮</div>
+                <div class="stat-name">বিভাগ</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section class="container updates-section">
+        <div class="updates-title">
+            <h2>সর্বশেষ আপডেট</h2>
+            <p>নির্বাচন সংক্রান্ত সর্বশেষ তথ্য ও আপডেট</p>
+        </div>
+        <div class="updates-cards">
+            <!-- Update 1 -->
+            <div class="update-card">
+                <div class="update-content">
+                    <div class="update-title">প্রার্থী তালিকা হালনাগাদ</div>
+                    <div class="update-desc">সারা দেশের নির্বাচনী আসনগুলোতে প্রার্থীদের তালিকা হালনাগাদ করা হয়েছে</div>
+                    <div class="update-date">
+                        <i class="far fa-calendar-alt"></i> ১০ মার্চ, ২০২৫
+                    </div>
+                    <a href="#" class="update-btn">বিস্তারিত</a>
+                </div>
+            </div>
+            
+            <!-- Update 2 -->
+            <div class="update-card">
+                <div class="update-content">
+                    <div class="update-title">নতুন ফিচার যোগ</div>
+                    <div class="update-desc">ওয়েবসাইটে প্রার্থী খোঁজার জন্য নতুন ফিল্টার ব্যবস্থা যোগ করা হয়েছে</div>
+                    <div class="update-date">
+                        <i class="far fa-calendar-alt"></i> ০৫ মার্চ, ২০২৫
+                    </div>
+                    <a href="#" class="update-btn">বিস্তারিত</a>
+                </div>
+            </div>
+            
+            <!-- Update 3 -->
+            <div class="update-card">
+                <div class="update-content">
+                    <div class="update-title">মনোনয়ন ফরম আপডেট</div>
+                    <div class="update-desc">নির্বাচনী মনোনয়ন ফরম আপডেট করা হয়েছে, নতুন ভার্সন ডাউনলোড করুন</div>
+                    <div class="update-date">
+                        <i class="far fa-calendar-alt"></i> ২৮ ফেব্রুয়ারি, ২০২৫
+                    </div>
+                    <a href="#" class="update-btn">বিস্তারিত</a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="all-updates-btn">
+            <i class="fas fa-newspaper"></i> সকল আপডেট দেখুন
+        </a>
+    </section>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>দ্রুত লিঙ্ক</h3>
+                <ul class="footer-links">
+                    <li><a href="#">হোম</a></li>
+                    <li><a href="#">নির্বাচনসমূহ</a></li>
+                    <li><a href="#">নির্বাচনী তথ্য</a></li>
+                    <li><a href="#">এলাকাসমূহ</a></li>
+                    <li><a href="#">ডাউনলোড</a></li>
+                    <li><a href="#">সাহায্য</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>সেবাসমূহ</h3>
+                <ul class="footer-links">
+                    <li><a href="#">নির্বাচনী তথ্য খোঁজা</a></li>
+                    <li><a href="#">আসন অনুসন্ধান</a></li>
+                    <li><a href="#">প্রার্থী তথ্য</a></li>
+                    <li><a href="#">এলাকা ম্যাপ</a></li>
+                    <li><a href="#">ফরম ডাউনলোড</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>যোগাযোগ</h3>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> ৪৫, নয়া পল্টন, ঢাকা-১০০০</p>
+                    <p><i class="fas fa-phone"></i> +৮৮০ ২ ৯৫৫৬২০৩</p>
+                    <p><i class="fas fa-envelope"></i> info@bnpelection.org</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>নিউজলেটার</h3>
+                <p>সর্বশেষ নির্বাচনী আপডেট পেতে আমাদের নিউজলেটারে সাবস্ক্রাইব করুন</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="ইমেইল এড্রেস">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; ২০২৫ জাতীয়তাবাদী দল (বিএনপি) - সর্বস্বত্ব সংরক্ষিত</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,718 @@
+:root {
+    --primary-color: #307f65;
+    --secondary-color: #f1f5f9;
+    --text-dark: #333;
+    --text-light: #fff;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', 'Bangla', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: var(--text-dark);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #0c694a;
+    color: var(--text-light);
+    padding: 1rem 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+
+    color: rgb(255, 0, 0); /* White text color */
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 20px; /* Add some padding around the text */
+    display: inline-block; /* To contain the background to the text width */
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* For Safari and Chrome */
+    border-radius: 5px; /* Optional: Add slight rounding to the background */
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.search-bar input {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+/* Search Section */
+.search-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 1px 1px 5px #000000;
+}
+
+.search-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-filters select {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.search-btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 0 0 auto;
+}
+
+/* Info Cards */
+.info-section {
+    margin: 3rem 0;
+}
+
+.info-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-header h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.info-header p {
+    color: #666;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.info-card-image {
+    height: 150px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.info-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-card-header {
+    padding: 0.75rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.red-header {
+    background-color: #e74c3c;
+}
+
+.green-header {
+    background-color: #0c6b47;
+}
+
+.purple-header {
+    background-color: #9b59b6;
+}
+
+.orange-header {
+    background-color: #f39c12;
+}
+
+.blue-header {
+    background-color: #3498db;
+}
+
+.info-card-content {
+    padding: 1rem;
+    color: #444 !important;
+}
+
+.info-card-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.info-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #242323;
+}
+
+.info-meta i {
+    color: #ff5c5c;
+    margin-right: 0.5rem;
+}
+
+.view-details-btn {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+/* Division Section */
+.division-section {
+    margin: 3rem 0;
+}
+
+.division-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.division-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.division-icon {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.division-title {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.division-desc {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.division-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.all-divisions-btn {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 0.75rem;
+    width: 200px;
+    margin: 2rem auto 0;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Features Section */
+.features-section {
+    margin: 3rem 0;
+}
+
+.features-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.features-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    color: #1a1a1a;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.feature-icon {
+    color: #ff5c5c;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+    color: #666;
+}
+
+/* Stats Section */
+.stats-section {
+    margin: 3rem 0;
+}
+
+.stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    text-align: center;
+}
+
+.stat-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.stat-name {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Updates Section */
+.updates-section {
+    margin: 3rem 0;
+}
+
+.updates-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.updates-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.update-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+}
+
+.update-content {
+    padding: 1.5rem;
+}
+
+.update-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.update-desc {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.update-date {
+    color: #000000;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.update-date i {
+    margin-right: 0.5rem;
+}
+
+.update-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.all-updates-btn {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 0.75rem;
+    width: 200px;
+    margin: 2rem auto 0;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: var(--text-light);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 0.5rem;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--text-light);
+}
+
+.footer-contact p {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 0.75rem;
+    width: 16px;
+}
+
+.newsletter {
+    display: flex;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.newsletter button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    font-size: 1.25rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #999;
+    font-size: 0.9rem;
+}
+.everything{
+display: ruby;
+}
+
+/* Enhanced Responsive Styling */
+@media (max-width: 992px) {
+    .features-cards,
+    .updates-cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .search-filters select {
+        margin-bottom: 0.5rem;
+    }
+
+    .all-divisions-btn,
+    .all-updates-btn {
+        width: 100%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar button {
+        margin-left: 0;
+        border-radius: 4px;
+    }
+
+    .info-cards,
+    .division-cards,
+    .features-cards,
+    .stats-cards,
+    .updates-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-icon,
+    .division-icon {
+        font-size: 2rem;
+    }
+
+    .info-card-image {
+        height: 120px;
+    }
+
+    .search-section,
+    .info-section,
+    .division-section,
+    .features-section,
+    .stats-section,
+    .updates-section {
+        margin: 1.5rem 0;
+    }
+
+    .search-section h2,
+    .info-header h2,
+    .features-title h2,
+    .updates-title h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --secondary-color: #1a1a1a;
+        --text-dark: #f1f1f1;
+        --border-color: #444;
+        --card-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+    
+    body {
+        background-color: #dbdbdb;
+    }
+
+    .info-card,
+    .division-card,
+    .feature-card,
+    .stat-card,
+    .update-card,
+    .search-section {
+        background-color: #ffffff;
+    }
+
+    .info-card-image {
+        background-color: #ffffff;
+    }
+
+    .info-meta,
+    .division-desc,
+    .feature-desc,
+    .stat-name,
+    .update-desc {
+        color: #000000;
+    }
+
+    .search-bar input,
+    .newsletter input {
+        background-color: #ffffff;
+        color: #f1f1f1;
+    }
+
+    footer {
+        background-color: #1a1a1a;
+    }
+}
