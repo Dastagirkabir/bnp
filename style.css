@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap'); /* এই লাইনটি যোগ করুন */
+
 :root {
     --primary-color: #307f65;
     --secondary-color: #f1f5f9;
@@ -11,7 +13,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Hind Siliguri', 'Bangla', sans-serif;
+    /* font-family পরিবর্তন করে 'Noto Sans Bengali' প্রথমে যোগ করুন */
+    font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Bangla', sans-serif;
 }
 
 body {
@@ -19,6 +22,8 @@ body {
     color: var(--text-dark);
     line-height: 1.6;
     text-align: center;
+     /* font-family পরিবর্তন করে 'Noto Sans Bengali' প্রথমে যোগ করুন */
+    font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Bangla', sans-serif;
 }
 
 .container {

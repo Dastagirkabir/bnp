@@ -16,6 +16,7 @@
     color: #ff0000;
     font-size: 2.5rem;
     margin-bottom: 10px;
+    -webkit-text-stroke: 1px  red;
 }
 
 .constituency-heading p {
@@ -37,6 +38,7 @@
     color: #007a06b2;
     font-size: 2.2rem;
     margin-bottom: 10px;
+    -webkit-text-stroke: 1px  #007a06b2;
 }
 
 .section-header p {
