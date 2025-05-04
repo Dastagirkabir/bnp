@@ -52,7 +52,7 @@
 <section class="everything">
     <section class="container search-section">
         <h2>নির্বাচনী এলাকা অনুযায়ী প্রার্থী অনুসন্ধান করুন</h2>
-        <form action="candidateDetails.html" method="get">
+        <form id="searchForm" action="candidateDetails.html" method="get">
             <div class="search-filters">
                 <select id="divisionSelect" name="division">
                     <option value="">বিভাগ নির্বাচন করুন</option>
@@ -71,7 +71,6 @@
                 <select id="constituencySelect" name="constituency">
                     <option value="">আসন নির্বাচন করুন</option>
                 </select>
-                <input type="hidden" id="selectedConstituency" name="selectedConstituencyValue">
                 <button type="submit" class="search-btn">
                     <i class="fas fa-search"></i> অনুসন্ধান
                 </button>
@@ -84,7 +83,7 @@
             <p>সর্বাধিক দেখা হওয়া প্রার্থীদের তথ্য</p>
         </div>
         <div class="info-cards">
-            <div class="info-card">
+             <div class="info-card">
                 <div class="info-card-image">
                     </div>
                 <div class="info-card-header red-header">বিএনপি</div>
@@ -260,7 +259,9 @@
                 </div>
                 <div class="division-title">রাজশাহী বিভাগ</div>
                 <div class="division-desc">রাজশাহী বিভাগের ৮টি জেলার নির্বাচনী আসন ও প্রার্থীদের তথ্য</div>
-                <a href="#" class="division-btn">বিস্তারিত দেখুন</a>
+                 <a href="bogura-6.html" class="division-btn" style="margin-top: 5px;">বগুড়া-৬ দেখুন</a>
+                 <br>
+                <a href="#" class="division-btn" style="margin-top: 5px;">সকল আসন দেখুন</a>
             </div>
         </div>
         <a href="#" class="all-divisions-btn">
@@ -269,7 +270,7 @@
     </section>
 
     <section class="container features-section">
-        <div class="features-title">
+         <div class="features-title">
             <p style="color: black;">এই সিস্টেম ব্যবহার করে আপনি যে সুবিধাগুলো পাবেন</p>
         </div>
         <div class="features-cards">
@@ -300,7 +301,7 @@
     </section>
 
     <section class="container stats-section">
-        <div class="stats-cards">
+         <div class="stats-cards">
             <div class="stat-card">
                 <div class="stat-title">৩০০+</div>
                 <div class="stat-name">আসন সংখ্যা</div>
@@ -422,7 +423,8 @@
 
 <script>
 const electoralData = {
-  "ঢাকা": {
+  // নির্বাচনী ডেটা অপরিবর্তিত ...
+   "ঢাকা": {
     "ঢাকা": [
       "ঢাকা-১, ১৭৪, দোহার উপজেলা এবং নবাবগঞ্জ উপজেলা",
       "ঢাকা-২, ১৭৫, কেরানীগঞ্জ উপজেলার শাক্তা, তেঘরিয়া, কোন্ডা, রুহিতপুর, কালিন্দী ও হযরতপুর ইউনিয়ন, ঢাকা দক্ষিণ সিটি কর্পোরেশনের ৫৬, ৫৭ ও ৫৮ নং ওয়ার্ড এবং সাভার উপজেলার ভাকুর্তা, তেঁতুলঝোড়া ও আমিনবাজার ইউনিয়ন",
@@ -704,7 +706,7 @@ const electoralData = {
       "বগুড়া-৩, ৩৮, দুপচাঁচিয়া উপজেলা এবং আদমদীঘি উপজেলা",
       "বগুড়া-৪, ৩৯, কাহালু উপজেলা এবং নন্দীগ্রাম উপজেলা",
       "বগুড়া-৫, ৪০, শেরপুর উপজেলা এবং ধুনট উপজেলা",
-      "বগুড়া-৬, ৪১, বগুড়া সদর উপজেলা",
+      "বগুড়া-৬, ৪১, বগুড়া সদর উপজেলা", // এই আসনটির জন্য পরিবর্তন প্রয়োজন
       "বগুড়া-৭, ৪২, গাবতলী উপজেলা এবং শাজাহানপুর উপজেলা"
     ],
     "চাঁপাইনবাবগঞ্জ": [
@@ -868,12 +870,11 @@ const electoralData = {
 }
 
 
-
+// আগের জাভাস্ক্রিপ্ট ফাংশনগুলো অপরিবর্তিত থাকবে
 const divisionSelect = document.getElementById('divisionSelect');
 const districtSelect = document.getElementById('districtSelect');
 const constituencySelect = document.getElementById('constituencySelect');
-const selectedConstituencyInput = document.getElementById('selectedConstituency');
-
+// const selectedConstituencyInput = document.getElementById('selectedConstituency'); // এই লাইনটি এখন দরকার নেই
 
 function updateDistrictOptions(division) {
   districtSelect.innerHTML = '<option value="">জেলা নির্বাচন করুন</option>';
@@ -897,16 +898,14 @@ function updateConstituencyOptions(division, district) {
         const constituencies = electoralData[division][district].sort();
         constituencies.forEach(constituency => {
             const option = document.createElement('option');
-            // Keep the original value containing name, number, and area
+            // value হিসেবে সম্পূর্ণ স্ট্রিং রাখা হচ্ছে
             option.value = constituency;
-            // Extract and display only the constituency name (before the first comma)
+            // প্রদর্শনের জন্য শুধু আসনের নাম (কমা'র আগের অংশ) দেখানো হচ্ছে
             option.textContent = constituency.split(',')[0];
             constituencySelect.appendChild(option);
         });
     }
 }
-
-
 
 if (divisionSelect) {
     divisionSelect.addEventListener('change', function() {
@@ -924,12 +923,50 @@ if (districtSelect) {
     });
 }
 
-if (constituencySelect) {
-    constituencySelect.addEventListener('change', function() {
-        const selectedValue = this.value;
-        selectedConstituencyInput.value = selectedValue;
+// constituencySelect এর change event আগের মতই থাকবে, শুধু hidden input সেট করার অংশ বাদ যাবে
+// if (constituencySelect) {
+//     constituencySelect.addEventListener('change', function() {
+//         // const selectedValue = this.value;
+//         // selectedConstituencyInput.value = selectedValue; // এই লাইনটি দরকার নেই
+//     });
+// }
+
+// --- নতুন যুক্ত করা কোড ---
+// ফর্ম সাবমিট করার সময় অ্যাকশন পরিবর্তন করার জন্য ইভেন্ট লিসেনার
+const searchForm = document.getElementById('searchForm');
+
+if (searchForm) {
+    searchForm.addEventListener('submit', function(event) {
+        const selectedDivision = divisionSelect.value;
+        const selectedDistrict = districtSelect.value;
+        const selectedConstituencyValue = constituencySelect.value; // আসন সিলেক্ট থেকে সম্পূর্ণ ভ্যালু নিন
+
+        // বগুড়া-৬ এর স্ট্রিং যা electoralData তে আছে ("বগুড়া-৬, ৪১, বগুড়া সদর উপজেলা")
+        const bogura6ConstituencyString = "বগুড়া-৬, ৪১, বগুড়া সদর উপজেলা";
+
+        // শর্ত চেক করুন
+        if (selectedDivision === 'রাজশাহী' && selectedDistrict === 'বগুড়া' && selectedConstituencyValue === bogura6ConstituencyString) {
+             // যদি শর্ত মেলে, ফর্মের অ্যাকশন bogura-6.html এ পরিবর্তন করুন
+            this.action = 'bogura-6.html';
+             // যেহেতু আমরা GET মেথড ব্যবহার করছি, কুয়েরি প্যারামিটার হিসেবে শুধু আসন নম্বর বা নাম পাঠাতে পারি,
+             // অথবা bogura-6.html এ কোনো প্যারামিটার না পাঠালেও চলে কারণ এটি নির্দিষ্ট পাতার জন্য।
+             // উদাহরণস্বরূপ, আমরা শুধু আসন নম্বর পাঠাতে পারি:
+             // this.action = `bogura-6.html?constituency=${encodeURIComponent(selectedConstituencyValue.split(',')[0])}`;
+             // অথবা কোনো প্যারামিটার ছাড়াই:
+             this.action = 'bogura-6.html';
+        } else {
+            // অন্যথায়, অ্যাকশন candidateDetails.html রাখুন
+            this.action = 'candidateDetails.html';
+             // candidateDetails.html এর জন্য আমরা আগের মতই সম্পূর্ণ তথ্য পাঠাব
+             // ফর্ম সাবমিশনের ডিফল্ট আচরণ এটিকে হ্যান্ডেল করবে কারণ name attribute গুলো সেট করা আছে
+        }
+
+        // ফর্ম সাবমিশন স্বাভাবিকভাবে চলতে দিন
+        // event.preventDefault() কল করা হচ্ছে না
     });
 }
+// --- নতুন কোড শেষ ---
+
 </script>
 
 </body>

@@ -1,0 +1,88 @@
+/* bogura-6.css */
+
+/* candidates-section এর জন্য কিছু প্যাডিং যোগ করা হলো */
+.candidates-section {
+    padding: 50px 0;
+    min-height: 60vh; /* Footer কে নিচে রাখতে সাহায্য করবে, প্রয়োজন অনুযায়ী মান পরিবর্তন করুন */
+    display: flex; /* Section কে flex container বানানো হলো */
+    flex-direction: column; /* কন্টেন্ট উপর থেকে নিচে সাজানো */
+    justify-content: center; /* Section এর কন্টেন্ট মাঝখানে আনতে */
+}
+
+
+/* candidates-grid কে ফ্লেক্স কন্টেইনার বানিয়ে কার্ড মাঝখানে আনা হচ্ছে */
+.candidates-grid {
+    display: flex;           /* ফ্লেক্সবক্স ব্যবহার করা হচ্ছে */
+    justify-content: center; /* আইটেমগুলো আনুভূমিকভাবে মাঝখানে সাজানো */
+    align-items: flex-start; /* আইটেমগুলো উল্লম্বভাবে উপরে সাজানো (যদি একাধিক সারি থাকে) */
+    flex-wrap: wrap;       /* যদি একাধিক কার্ড থাকে তবে র‍্যাপ করবে */
+    gap: 0;                /* যেহেতু একটি কার্ড, গ্যাপ দরকার নেই */
+    padding: 20px 0;       /* উপরে নিচে কিছু প্যাডিং */
+
+}
+
+/* candidate-card এর জন্য নির্দিষ্ট স্টাইল (প্রয়োজনে) */
+.candidate-card {
+    /* আগের candidateDetails.css থেকে স্টাইলগুলো এখানে কপি করতে পারেন
+       অথবা candidateDetails.css এর স্টাইলগুলো যদি যথেষ্ট হয় তবে নতুন করে লেখার প্রয়োজন নেই।
+       এখানে শুধুমাত্র centering এর জন্য grid কে override করা হয়েছে। */
+    max-width: 350px; /* কার্ডের সর্বোচ্চ প্রস্থ নির্ধারণ করা হলো, প্রয়োজন অনুযায়ী পরিবর্তন করুন */
+    width: 100%;      /* ছোট স্ক্রিনে পুরো প্রস্থ নেবে */
+    margin: 0 auto;   /* ফ্লেক্স কন্টেইনার ছাড়াও এটি মাঝখানে রাখতে সাহায্য করবে */
+}
+
+/* Hero section স্টাইল (প্রয়োজনে bogura-6.css এ রাখতে পারেন অথবা candidateDetails.css থেকে আসবে) */
+.constituency-hero {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.constituency-heading {
+    text-align: center;
+    margin-bottom: 30px; /* candidateDetails.css থেকে */
+}
+
+.constituency-heading h1 {
+    color: #ff0000;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px red; /* candidateDetails.css থেকে */
+}
+
+.constituency-heading p {
+    color: #555;
+    font-size: 1.1rem; /* candidateDetails.css থেকে */
+}
+
+
+/* section-header স্টাইল (প্রয়োজনে bogura-6.css এ রাখতে পারেন অথবা candidateDetails.css থেকে আসবে) */
+.section-header {
+    text-align: center;
+    margin-bottom: 20px; /* একটু কমানো হলো */
+}
+
+.section-header h2 {
+    color: #007a06b2;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 1px #007a06b2; /* candidateDetails.css থেকে */
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1.1rem; /* candidateDetails.css থেকে */
+}
+
+/* candidate card এর ভেতরের এলিমেন্টগুলোর স্টাইল candidateDetails.css থেকে লোড হবে,
+   তাই এখানে সেগুলোর ডুপ্লিকেট করার প্রয়োজন নেই, যদি না আপনি কোনো স্টাইল override করতে চান। */
+
+/* Responsive Styles (যদি প্রয়োজন হয়) */
+@media (max-width: 768px) {
+    .constituency-heading h1 {
+        font-size: 2rem;
+    }
+    .candidate-card {
+        max-width: 90%; /* ছোট স্ক্রিনে প্রস্থ একটু বাড়ানো হলো */
+    }
+}
